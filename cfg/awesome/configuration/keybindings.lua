@@ -2,10 +2,10 @@
 local awful = require "awful"
 
 local function set_keybindings ()
-    awful.keyboard.append_global_keybindings({
+	awful.keyboard.append_global_keybindings({
         awful.key({ modkey, "Control" }, "r", awesome.restart,
                   {description = "reload awesome", group = "awesome"}),
-        awful.key({ modkey, "Shift"   }, "q", awesome.quit,
+        awful.key({ modkey, "Control" }, "q", awesome.quit,
                   {description = "quit awesome", group = "awesome"}),
         awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
                   {description = "open a terminal", group = "launcher"}),
@@ -17,7 +17,7 @@ local function set_keybindings ()
             { description = 'toggle the dashboard', group = 'launcher '}
         ),
         awful.key(
-            { modkey }, 'c',
+            { modkey }, 's',
             function ()
                 awesome.emit_signal('screenshot-center::toggle')
             end,
@@ -30,7 +30,7 @@ local function set_keybindings ()
             end,
             { description = 'toggle the notifcenter', group = 'launcher'}
         ),
-        awful.key({ modkey, "Shift" }, "Return", function () awful.spawn("rofi -show drun") end,
+        awful.key({ modkey }, 'w', function () awful.spawn("rofi -show drun") end,
                   {description = "Open rofi", group = "launcher"}),
     })
 
@@ -101,9 +101,9 @@ local function set_keybindings ()
                   {description = "increase the number of columns", group = "layout"}),
         awful.key({ modkey, "Control" }, "l",     function () awful.tag.incncol(-1, nil, true)    end,
                   {description = "decrease the number of columns", group = "layout"}),
-        awful.key({ modkey,           }, "Tab", function () awful.layout.inc( 1)                end,
+        awful.key({ modkey,           }, "space", function () awful.layout.inc( 1)                end,
                   {description = "select next", group = "layout"}),
-        awful.key({ modkey, "Shift"   }, "Tab", function () awful.layout.inc(-1)                end,
+        awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
                   {description = "select previous", group = "layout"}),
     })
 
@@ -187,9 +187,9 @@ local function set_keybindings ()
                     c:raise()
                 end,
                 {description = "toggle fullscreen", group = "client"}),
-            awful.key({ modkey   }, "w",      function (c) c:kill()                         end,
+            awful.key({ modkey   }, "q",      function (c) c:kill()                         end,
                     {description = "close", group = "client"}),
-            awful.key({ modkey }, "space",  awful.client.floating.toggle                     ,
+            awful.key({ modkey }, "i",  awful.client.floating.toggle                     ,
                     {description = "toggle floating", group = "client"}),
             awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end,
                     {description = "move to master", group = "client"}),
