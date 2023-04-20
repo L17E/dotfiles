@@ -8,7 +8,7 @@ local dpi = beautiful.xresources.apply_dpi
 -- signals
 require 'signal.cpu'
 require 'signal.ram'
-require 'signal.disk'
+require 'signal.battery'
 require 'signal.temperature'
 
 -- cahrts
@@ -80,7 +80,8 @@ end
 -- initialize charts
 local cpu = mkchart('CPU', '')
 local mem = mkchart('RAM', '')
-local disk = mkchart('Disk', '')
+-- local disk = mkchart('Disk', '')
+local battery = mkchart('Battery', '')
 local temp = mkchart('Temp', '')
 
 -- give charts values
@@ -100,8 +101,12 @@ awesome.connect_signal('ram::used', function (used)
     mem.chart_value = used / 100
 end)
 
-awesome.connect_signal('disk::usage', function (used)
-    disk.chart_value = used / 100
+-- awesome.connect_signal('disk::usage', function (used)
+--     disk.chart_value = used / 100
+-- end)
+
+awesome.connect_signal('battery::percentage', function (percentage)
+    battery.chart_value = percentage
 end)
 
 awesome.connect_signal('temperature::value', function (temperature)
@@ -127,7 +132,7 @@ return wibox.widget {
         },
         {
             temp,
-            disk,
+            battery,
             spacing = beautiful.useless_gap * 2,
             layout = wibox.layout.flex.horizontal,
         },
