@@ -1,7 +1,7 @@
 ---@diagnostic disable: undefined-global
 local wibox = require 'wibox'
 local beautiful = require 'beautiful'
-local awful = require 'awful'
+local awful = require 'awful'	
 
 local launchers = require 'ui.bar.modules.launchers'
 local gettaglist = require 'ui.bar.modules.tags'
@@ -11,6 +11,7 @@ local actions = require 'ui.bar.modules.actions'
 local clock = require 'ui.bar.modules.date'
 local getlayoutbox = require 'ui.bar.modules.layoutbox'
 local powerbutton = require 'ui.bar.modules.powerbutton'
+local kb_layout = require 'ui.bar.modules.keyboard_layout'
 
 screen.connect_signal('request::desktop_decoration', function (s)
     awful.tag(
@@ -31,14 +32,21 @@ screen.connect_signal('request::desktop_decoration', function (s)
                     {
                         {
                             systray_toggler,
-                            dashboard_toggler,
+                            -- dashboard_toggler,
                             spacing = 9,
                             layout = wibox.layout.fixed.vertical,
                         },
                         {
-                            actions,
-                            bottom = 6,
-                            widget = wibox.container.margin,
+                            -- actions,
+                            {
+                            	kb_layout,
+			    	            layout = wibox.container.place,
+			    	            halign = 'center',
+			    	            valign = 'center',
+			                },
+                            bottom = 10,
+                            top = 10,
+			                widget = wibox.container.margin,
                         },
                         {
                             clock,
