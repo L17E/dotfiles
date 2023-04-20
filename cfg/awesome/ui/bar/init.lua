@@ -39,14 +39,14 @@ screen.connect_signal('request::desktop_decoration', function (s)
                         {
                             -- actions,
                             {
-                            	kb_layout,
-			    	            layout = wibox.container.place,
-			    	            halign = 'center',
-			    	            valign = 'center',
-			                },
+              			kb_layout,
+				layout = wibox.container.place,
+				halign = 'center',
+				valign = 'center',
+			    },
                             bottom = 10,
                             top = 10,
-			                widget = wibox.container.margin,
+			    widget = wibox.container.margin,
                         },
                         {
                             clock,
