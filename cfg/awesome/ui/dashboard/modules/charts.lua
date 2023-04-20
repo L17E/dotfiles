@@ -106,7 +106,7 @@ end)
 -- end)
 
 awesome.connect_signal('battery::percentage', function (percentage)
-    battery.chart_value = percentage
+    battery.chart_value = percentage / 100
 end)
 
 awesome.connect_signal('temperature::value', function (temperature)
