@@ -12,6 +12,7 @@ local clock = require 'ui.bar.modules.date'
 local getlayoutbox = require 'ui.bar.modules.layoutbox'
 local powerbutton = require 'ui.bar.modules.powerbutton'
 local kb_layout = require 'ui.bar.modules.keyboard_layout'
+local battery = require 'ui.bar.modules.battery'
 
 screen.connect_signal('request::desktop_decoration', function (s)
     awful.tag(
@@ -39,14 +40,14 @@ screen.connect_signal('request::desktop_decoration', function (s)
                         {
                             -- actions,
                             {
-              			kb_layout,
-				layout = wibox.container.place,
-				halign = 'center',
-				valign = 'center',
-			    },
+                                battery,
+            			        kb_layout,
+            			        spacing = 5,
+			                    layout = wibox.layout.fixed.vertical,
+                            },
                             bottom = 10,
                             top = 10,
-			    widget = wibox.container.margin,
+			                widget = wibox.container.margin,
                         },
                         {
                             clock,
