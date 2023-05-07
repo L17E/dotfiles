@@ -112,7 +112,7 @@ Then, just copy the config files to the appropiate folders.
 ```sh
 cp -r ./cfg/* ~/.config
 cp -r ./bin/* ~/.local/bin
-cp -r ./home/.Xresources ~
+cp -r ./home/* ~
 ```
 
 ### Make powermenu buttons work.
