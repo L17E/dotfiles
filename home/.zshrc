@@ -116,11 +116,7 @@ alias cls=clear
 alias q=exit
 
 # Enable Alt+Tab keybinding to select from previous commands
-bindkey '^[^I' history-search-backward
-
-# Enable Autocomplete with selected option on Alt+Tab
-autoload -Uz compinit && compinit
-zstyle ':completion:*' menu select=1
+bindkey -s '^[^I' '^[[C'
 
 # Alt keybindings in vim mode
 bindkey "^[w" forward-word
