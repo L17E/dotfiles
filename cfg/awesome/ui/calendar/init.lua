@@ -46,7 +46,7 @@ awful.screen.connect_for_each_screen(function (s)
 
                         local colors = {
                             header = beautiful.blue,
-                            focus = beautiful.aqua,
+                            focus = beautiful.bg_normal,
                             weekday = beautiful.cyan
                         }
 
@@ -58,7 +58,7 @@ awful.screen.connect_for_each_screen(function (s)
                                 margins = 7,
                                 widget = wibox.container.margin,
                             },
-                            bg = flag == 'focus' and beautiful.black or beautiful.bg_normal,
+                            bg = flag == 'focus' and beautiful.blue or beautiful.bg_normal,
                             fg = color,
                             widget = wibox.container.background,
                             shape = flag == 'focus' and gears.shape.circle or nil,
