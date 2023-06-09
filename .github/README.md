@@ -12,24 +12,24 @@
 <!-- BADGES -->
 <h1>
   <a href="#--------">
-    <img alt="" align="left" src="https://img.shields.io/github/stars/AlphaTechnolog/dotfiles?color=f1cf8a&labelColor=f1cf8a&style=for-the-badge"/>
+    <img alt="" align="left" src="https://img.shields.io/github/stars/L17E/dotfiles?color=f1cf8a&labelColor=f1cf8a&style=for-the-badge"/>
   </a>
   <a href="#--------">
-    <img alt="" align="right" src="https://api.visitorbadge.io/api/visitors?path=AlphaTechnolog%2Fdotfiles&label=Views&labelColor=%2386aaec&countColor=%2386aaec" />
+    <img alt="" align="right" src="https://api.visitorbadge.io/api/visitors?path=L17E%2Fdotfiles&label=Views&labelColor=%2386aaec&countColor=%2386aaec" />
   </a>
 </h1>
 
 <br>
 
 ## Hi there! Thanks for dropping by! :blue_heart:
-<b>  AlphaTechnolog's AwesomeWM Rice  </b>
+<b>  L17E's AwesomeWM Rice  </b>
 
 Welcome! This is the repository for my awesomewm rice using [decay](https://github.com/decaycs) (decayce variant)
 
 ## ‎ <samp>Notice! ⚠️</samp>
 
 If you like this configuration, please give me a star in this repo, it will make me more happy! 😁
-> If you want, you can visit [more of my repos](https://github.com/AlphaTechnolog?tab=repositories) or go to [my profile](https://github.com/AlphaTechnolog)
+> If you want, you can visit [more of my repos](https://github.com/L17E?tab=repositories) or go to [my profile](https://github.com/L17E)
 > Ah, and gimme credits if you will use my config for showcase :3
 
 > See other branches to go to others/olders rices.
@@ -45,7 +45,7 @@ Here are some details about my setup:
 - **Terminal:** [wezterm](https://github.com/wez/wezterm)
 - **Shell:** [hilbish](https://github.com/Rosettea/Hilbish)
 - **Editor:** [neovim](https://github.com/neovim/neovim)
-- **NeovimConfig**: [nvcodark](https://github.com/AlphaTechnolog/nvcodark) (I'm using the remake that is present in the dev branch, instructions aren't ready yet, main branch is broken)
+- **NeovimConfig**: [nvcodark](https://github.com/L17E/nvcodark) (I'm using the remake that is present in the dev branch, instructions aren't ready yet, main branch is broken)
 - **Compositor:** [picom](https://github.com/yshui/picom)
 - **Application Launcher:** [rofi](https://github.com/davatorium/rofi)
 
@@ -56,7 +56,7 @@ Here are some details about my setup:
 First clone the repository (remember to clone the submodules)
 
 ```sh
-git clone -b awesomewm-vertical --recurse-submodules --depth=1 https://github.com/AlphaTechnolog/dotfiles
+git clone -b awesomewm-vertical --recurse-submodules --depth=1 https://github.com/L17E/dotfiles
 cd dotfiles
 ```
 
@@ -64,7 +64,7 @@ cd dotfiles
 
 Then make sure you have the next requirements installed
 
-This is in testing phase btw, if you think i miss some pkg, please tell me it opening an [issue](https://github.com/AlphaTechnolog/dotfiles/issues/new)
+This is in testing phase btw, if you think i miss some pkg, please tell me it opening an [issue](https://github.com/L17E/dotfiles/issues/new)
 
 #### Fonts
 
