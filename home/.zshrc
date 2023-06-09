@@ -112,6 +112,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$PATH:/home/lyte/.spicetify
 
 alias vim=nvim
+alias v=nvim
 alias cls=clear
 alias q=exit
 
