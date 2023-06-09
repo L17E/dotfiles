@@ -88,7 +88,7 @@ This is in testing phase btw, if you think i miss some pkg, please tell me it op
 |playerctl|Remotely music management (needs to use dbus, use dbus-run-session if your session isn't started with dbus)|
 |light|Manage the brightness using the cli|
 |pulseaudio|Well, just the audio manager|
-|pactl|Manage pulseaudio using the cli|
+|libpulse & pactl|Manage pulseaudio using the cli|
 |maim|Take screenshots|
 |jq|Parse .json files (I used it to make mathematics operations with decimals in bash scripts)|
 |bluez & bluez-utils|Bluetooth|
