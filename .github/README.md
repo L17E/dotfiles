@@ -91,6 +91,7 @@ This is in testing phase btw, if you think i miss some pkg, please tell me it op
 |pactl|Manage pulseaudio using the cli|
 |maim|Take screenshots|
 |jq|Parse .json files (I used it to make mathematics operations with decimals in bash scripts)|
+|bluez & bluez-utils|Bluetooth|
 
 ### Copy the configs
 
